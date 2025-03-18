@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: aqua;
+        font-size: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        grid-template-rows: 100px 200px 100px;
+        grid-template-areas:
+          "H H H H H"
+          "Ls M M M Rs"
+          "F F F F F";
+        margin: 20px;
+      }
+      .box1 {
+        grid-area: H;
+      }
+      .box2 {
+        grid-area: Ls;
+      }
+      .box3 {
+        grid-area: M;
+      }
+      .box4 {
+        grid-area: Rs;
+      }
+      .box5 {
+        grid-area: F;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Header</div>
+      <div class="box box2">Left sidebar</div>
+      <div class="box box3">Main content</div>
+      <div class="box box4">Right sidebar</div>
+      <div class="box box5">Footer</div>
+    </div>
+  </body>
+</html>

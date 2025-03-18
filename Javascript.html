@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for loop</title>
+  </head>
+  <body>
+    <!-- <h1 id="welcome"></h1> -->
+    <!-- <h1 id="hello"></h1> -->
+    <h1 id="heading"></h1>
+    <h2 id="welcome"></h2>
+    <h1 id="hello"></h1>
+    <!-- <input type="text" id="username" />
+    <button onclick="myfunc()">click me</button> -->
+    <input type="text" id="username" />
+    <input type="text" id="password" />
+    <button onclick="myfunc()">Submit</button>
+    <script>
+      // var a = 3;
+      // var b = 2;
+      // function ak() {
+      //   console.log(a + b);
+      // }
+      // ak();
+      // var ak = function (a, b) {
+      //   console.log(a + b);
+      // };
+      // ak(1, 2);
+      // var ak = (name) => {
+      //   console.log("Welcome " + name);
+      // };
+      // ak("sabesh");
+      // function ak(a){
+      // if ((a, b)) {
+      //   console.log("a is even");
+      //   console.log("b is odd");
+      // } else if ((a, b)) {
+      //   console.log("a is odd");
+      //   console.log("b is even");
+      // } else {
+      //   console.log("a is odd");
+      //   console.log("b is even");
+      // }
+      //   if (a % 2 == 0) {
+      //     console.log(a + " is even number");
+      //   } else {
+      //     console.log(a + " is odd number");
+      //   }
+      // }
+      // ak(1);
+      // if (a + 4 == 12) {
+      //   console.log(a + "is Even Number");
+      // } else {
+      //   console.log(a + "is Odd Number");
+      // }
+      // ak(8);
+      // var a = document.getElementById("heading");
+      // a.innerHTML = "hello world";
+      // a.style.color = "red";
+      // console.log(document.getElementById("welcome"));
+      // console.log(document.getElementById("hello"));
+      // var a = document.getElementById("hello");
+      // a.innerHTML = "Hello Everyone";
+      // a.style.color = "green";
+      // for (let i = 0; i <= 10; i++) {
+      //   if (i % 2 == 0) {
+      //     console.log("The Number is Even");
+      //   } else {
+      //     console.log("The Number is Odd");
+      //   }
+      //   document.write(i);
+      // }
+
+      // let employee = {
+      //   name: "sasij",
+      //   age: "21",
+      //   place: {
+      //     city: "madurai",
+      //     state: "tamilnadu",
+      //   },
+      // };
+
+      // console.log(employee.place.city);
+
+      // let user = {};
+      // console.log(user);
+
+      // user.name = "ajith";
+      // user.age = "22";
+
+      // console.log(user);
+      // let student = {
+      //   name: "akshay",
+      //   age: "21",
+      //   Rollno: "12116308",
+      //   place: {
+      //     flatno: "1/179-4-3",
+      //     area: "meenakshi amman nagar, surya nagar",
+      //     city: "Madurai",
+      //     state: "tamilnadu",
+      //     country: "india",
+      //   },
+      // };
+      // console.log(student);
+
+      // storage
+      // localStorage,session storage
+
+      // localStorage.setItem("name", "sabesh");
+      // let uu = localStorage.getItem("name");
+      // console.log(uu);
+      // document.getElementById("heading").innerHTML = uu;
+      // localStorage.removeItem("name");
+      // localStorage.setItem("Name", "Akshay");
+      // localStorage.setItem("Age", "21");
+      // localStorage.setItem("Rollno", "12116308");
+      // localStorage.setItem("City", "Madurai");
+      // localStorage.setItem("State", "TamilNadu");
+      // localStorage.setItem("Country", "India");
+      // let ak = localStorage.getItem("Name");
+      // let ad = localStorage.getItem("Age");
+      // let as = localStorage.getItem("Rollno");
+      // let af = localStorage.getItem("City");
+      // let ag = localStorage.getItem("State");
+      // let ar = localStorage.getItem("Country");
+      // console.log(ak);
+      // console.log(ad);
+      // console.log(as);
+      // console.log(af);
+      // console.log(ag);
+      // console.log(ar);
+      // documant.getElementById("heading").innerHTML = ak;
+      // documant.getElementById("heading").innerHTML = ad;
+      // documant.getElementById("heading").innerHTML = as;
+      // documant.getElementById("heading").innerHTML = af;
+      // documant.getElementById("heading").innerHTML = ag;
+      // documant.getElementById("heading").innerHTML = ar;
+      // sessionStorage.setItem("Name", "Akshay");
+      // sessionStorage.setItem("Age", "21");
+      // sessionStorage.setItem("Rollno", "12116308");
+      // sessionStorage.setItem("City", "Madurai");
+      // sessionStorage.setItem("State", "TamilNadu");
+      // sessionStorage.setItem("Country", "India");
+      // let dk = sessionStorage.getItem("Name");
+      // let dd = sessionStorage.getItem("Age");
+      // let ds = sessionStorage.getItem("Rollno");
+      // let df = sessionStorage.getItem("City");
+      // let dg = sessionStorage.getItem("State");
+      // let dr = sessionStorage.getItem("Country");
+      // console.log(dk);
+      // console.log(dd);
+      // console.log(ds);
+      // console.log(df);
+      // console.log(dg);
+      // console.log(dr);
+      // documant.getElementById("welcome").innerHTML = dk;
+      // documant.getElementById("welcome").innerHTML = dd;
+      // documant.getElementById("welcome").innerHTML = ds;
+      // documant.getElementById("welcome").innerHTML = df;
+      // documant.getElementById("welcome").innerHTML = dg;
+      // documant.getElementById("welcome").innerHTML = dr;
+
+      // array
+
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+      // arr.push(9);
+      // console.log(arr);
+      // arr.pop();
+      // console.log(arr);
+      // arr.unshift("AK");
+      // console.log(arr);
+      // arr.shift();
+      console.log(arr);
+      // var arr1 = arr.map((x) => x + 2);
+      // console.log(arr1);
+      let arr3 = arr.filter((x) => x % 2 == 0);
+      console.log(arr3);
+      var arr4 = arr.map((x) => x + 3);
+      console.log(arr4);
+      var arr5 = arr.filter((x) => x % 3 == 0);
+      console.log(arr5);
+
+      // alert("hey world");
+      // prompt("enter the name", "");
+      // confirm("hellooooo");
+
+      // function myfunc() {
+      //   // alert("welcome home");
+      //   var username = document.getElementById("username").value;
+      //   document.getElementById("welcome").innerHTML = username;
+      // }
+      function myfunc() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        // username = document.getElementById("username").value;
+        // document.getElementById("heading").innerHTML = username;
+        // var password = document.getElementById("password").value;
+        // document.getElementById("welcome").innerHTML = password;
+        if (username == "Akshay" && password == "darkAK16503") {
+          document.getElementById("heading").innerHTML = "username is correct";
+          document.getElementById("welcome").innerHTML = "password is correct";
+          document.getElementById("heading").style.color = "green";
+          document.getElementById("welcome").style.color = "green";
+        } else if (username == "Akshay" && password != "darkAK16503") {
+          // alert("Wrong User");
+          document.getElementById("heading").innerHTML = "username is correct";
+          document.getElementById("welcome").innerHTML =
+            "password is incorrect";
+          document.getElementById("heading").style.color = "green";
+          document.getElementById("welcome").style.color = "red";
+        } else if (username != "Akshay" && password == "darkAK16503") {
+          // alert("Wrong User");
+          document.getElementById("heading").innerHTML =
+            "username is incorrect";
+          document.getElementById("welcome").innerHTML = "password is correct";
+          document.getElementById("heading").style.color = "red";
+          document.getElementById("welcome").style.color = "green";
+        } else {
+          document.getElementById("heading").innerHTML =
+            "username is incorrect";
+          document.getElementById("welcome").innerHTML =
+            "password is incorrect";
+          document.getElementById("welcome").style.color = "red";
+          document.getElementById("heading").style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

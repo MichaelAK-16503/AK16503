@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* {#phone
+        only screen and (max-width:320px)
+         #Tablet
+        only screen and (min-width:321px) and (max-width:768px)
+         #Desktop
+        Only screen and (min-width:769px)} */
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+      @media only screen and (max-width: 320px) {
+        .box {
+          background-color: black;
+        }
+      }
+      @media only screen and (min-width: 321px) and (max-width: 768px) {
+        .box {
+          background-color: blue;
+        }
+      }
+      @media only screen and (min-width: 769px) {
+        .box {
+          background-color: brown;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
