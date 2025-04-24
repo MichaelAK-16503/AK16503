@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Booking Agency</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AK Travels</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Explore the World with Us</h2>
+    <p>Your dream vacation is just a click away.</p>
+    <button onclick="scrollToBooking()">Book a Trip</button>
+  </section>
+
+  <section id="destinations">
+    <h1>Popular Destinations</h1>
+    <div class="destination-grid">
+    <a href="http://127.0.0.1:5501/Paris.html">
+      <div class="destination-card a">
+           <img src="paris.jpg" alt="Paris" />
+           <h3>Paris</h3>&nbsp;
+           <p>Experience the romance of the City of Lights.</p>
+         </div>
+    </a>
+
+    <a href="http://127.0.0.1:5501/Bali.html">
+      <div class="destination-card a">
+      <img src="bali.jpg" alt="Bali" />
+      <h3>Bali</h3>&nbsp;
+       <p>Relax on the beautiful beaches of Bali.</p>
+    </div>
+    </a>
+
+    <a href="http://127.0.0.1:5501/New%20York.html">
+      <div class="destination-card a">
+        <img src="newyork.jpg" alt="New York" />
+        <h3>New York</h3>&nbsp;
+        <p>Discover the vibrant culture of the Big Apple.</p>
+      </div>
+      </a>
+
+      <a href="http://127.0.0.1:5501/Tokyo.html">
+      <div class="destination-card a">
+        <img src="tokyo.jpg" alt="Tokyo" />
+        <h3>Tokyo</h3>&nbsp;
+        <p>Experience the blend of tradition & modernity in Tokyo.</p>
+    </div>
+    </a>
+   
+    <a href="http://127.0.0.1:5501/Malasiya.html">
+      <div class="destination-card a">
+        <img src="malaysia.jpg" alt="Malaysia" />
+        <h3>Malaysia</h3>&nbsp;
+        <p>Experience the blend of culture and nature.</p>
+      </div>
+    </a>
+   <a href="http://127.0.0.1:5501/Singapore.html">
+      <div class="destination-card a">
+         <img src="singapore.jpg" alt="Singapore" />
+         <h3>Singapore</h3>&nbsp;
+         <p>Discover the vibrant culture of the Big Apple like Malasiya.</p>
+         </div>
+   </a>
+   <a href="http://127.0.0.1:5501/Switzerland.html">
+      <div class="destination-card a">
+         <img src="switzerland.jpg" alt="Switzerland" />
+         <h3>Switzerland</h3>&nbsp;
+         <p>Experience the blend of beauty of Nature.</p>
+       </div>
+   </a>
+   <a href="http://127.0.0.1:5501/Maldives.html">
+      <div class="destination-card a">
+         <img src="maldives.jpg" alt="Maldives" />
+         <h3>Maldives</h3>&nbsp;
+         <p>Experience the blend of beauty of Nature for this Summer.</p>
+       </div>
+   </a>  
+   <a href="Dubai.html">
+      <div class="destination-card a">
+         <img src="dubai.jpg" alt="Dubai" />
+         <h3>Dubai</h3>&nbsp;
+         <p>Experience the Marvels of the Humans.</p>
+       </div>
+   </a>   
+   <a href="Australia.html">
+      <div class="destination-card australia">
+         <img src="australia.jpg" alt="Australia" />
+         <h3>Australia</h3>&nbsp;
+         <p>Experience the Love and Care of the People in Australia.</p>
+       </div>
+   </a>
+   <a href="Thailand.html">
+      <div class="destination-card a">
+         <img src="thailand.jpg" alt="Thailand" />
+         <h3>Thailand</h3>&nbsp;
+         <p>Experience the Love and Care of the People in Canada.</p>
+       </div>  
+       </a>
+   <a href="Los Angeles.html">
+      <div class="destination-card a">
+         <img src="losangeles.jpg" alt="Los Angeles" />
+         <h3>Los Angeles</h3>&nbsp;
+         <p>Experience the blend of the Well Developed Country.</p>
+       </div>  
+       </a>
+      </div>
+  </section>
+   
+  <section id="booking">
+    <h2>Book Your Trip</h2>
+    <form id="bookingForm" class="p-adding" onsubmit="handleFormSubmit(event)">
+      <label for="travelType">Travel Type:</label>
+      <select id="travelType" required>
+         <option>Select</option> 
+        <option value="family">Family</option>
+        <option value="honeymoon">Honeymoon</option>
+        <option value="business">Business</option>
+         <option value="adventure">Adventure</option>
+         <option value="solo">Solo</option>
+         <option value="group">Group</option>
+         </select>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="destination">Destination:</label>
+      <select id="destination" required>
+        <option value="paris">Paris</option>
+        <option value="bali">Bali</option>
+        <option value="newyork">New York</option>
+      </select>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" required />
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="confirmationMessage"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: AKtravels777@gmail.com</p>
+    <p>Phone: +91 76048 22685</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AK Travels</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
